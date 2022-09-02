@@ -5,28 +5,18 @@ on:
     branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - run: pnpm install
-
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@v2
+      - uses: npm/action-setup@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: pnpm install
-      - run: pnpm build
+      - run: npm install
+      - run: npm build
         working-directory: ./
 
       - run: npm publish
