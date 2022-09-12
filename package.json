@@ -1,13 +1,13 @@
 {
   "name": "eoapi-tapdata",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Import the JSON format file of the OpenAPI specification",
   "main": "dist/index.js",
   "moduleID": "eoapi-import-tapdata",
   "moduleName": "Import Tapdata",
   "moduleType": "feature",
   "author": "Tapdata",
-  "logo": "https://avatars.githubusercontent.com/u/36888935?s=200&v=4",
+  "logo": "https://data.eolink.com/4waW1cweaf7bfd75ed8d3c37a3c77628cfadd6bb60bb2b2",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "build:watch": "rollup -w -c rollup.config.js"
@@ -25,7 +25,7 @@
       "action": "importFunc",
       "label": "OpenAPI(.json)",
       "description": "${function.description}",
-      "icon": "https://avatars.githubusercontent.com/u/36888935?s=200&v=4"
+      "icon": "https://data.eolink.com/4waW1cweaf7bfd75ed8d3c37a3c77628cfadd6bb60bb2b2"
     },
     "i18n": {
       "sourceLocale": "en-US",
