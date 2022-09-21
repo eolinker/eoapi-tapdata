@@ -1,6 +1,6 @@
 {
   "name": "eoapi-tapdata",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Import the JSON format file of the OpenAPI specification",
   "main": "dist/index.js",
   "moduleID": "eoapi-import-tapdata",
